@@ -19,9 +19,6 @@ public class Lv1_K {
             return answer;
         }
     }
-    public static void main(String[] args) {
-        
-    }
 }
 
 /* 다른 사람 풀이
