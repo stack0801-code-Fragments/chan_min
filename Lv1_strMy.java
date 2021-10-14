@@ -4,7 +4,6 @@ public class Lv1_strMy {
         public String[] solution(String[] strings, int n) {
             String[] answer = new String[strings.length];
             
-            // ArrayList 사용
             ArrayList<String> array = new ArrayList<String>();
                 
             for (int i=0; i<strings.length; i++) {
