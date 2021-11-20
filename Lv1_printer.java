@@ -1,3 +1,6 @@
+import java.util.Collections;
+import java.util.PriorityQueue;
+
 class Solution {
     public int solution(int[] priorities, int location) {
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
