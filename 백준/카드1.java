@@ -25,3 +25,7 @@ public class 카드1 {
         System.out.println(card.poll());
     }
 }
+//qqqqqqqqqqqqqqqqqqqqqqqq
+//qqqqqqqqqqqqqqqqqqqqqqqqq
+///qqqqqqqqqqqqqqqqqqqqqqq
+//qqqqqqqqqqqqqqqqqqqq
