@@ -30,15 +30,3 @@ public class Solution {
         IntStream.range(0, b).forEach(s -> System.out.println(sb.toString()));
     }
 }
-*/
-////
-/////
-////
-///
-///
-
-//
-//
-//
-//
-//
