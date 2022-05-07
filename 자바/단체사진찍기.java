@@ -15,7 +15,7 @@ class Solution {
         cnt =0;
         kakao = new HashMap<>();
         ok = true;
-        // position의 index번호로 매핑
+        //position의 index번호로 매핑
         kakao.put('A',0);
         kakao.put('C',1);
         kakao.put('F',2);
@@ -25,9 +25,9 @@ class Solution {
         kakao.put('R',6);
         kakao.put('T',7);
         
-        // 1.순열 
+        //순열 
         perm(0, data);
-        // 2.조건 검사 
+        //조건 검사 
         answer = cnt;
         return answer;
     }
@@ -55,7 +55,7 @@ class Solution {
         }        
     }
     public static boolean isOk( String[] data){
-        // 입력 받은 값 꺼내고 검사하자.
+        // 입력 받은 값 꺼내고 검사
         
         
         for( int i=0; i<data.length; i++){
