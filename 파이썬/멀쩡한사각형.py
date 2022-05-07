@@ -1,0 +1,3 @@
+import math #파이썬은 신이다...
+def solution(w,h):
+    return w*h - (w+h-math.gcd(w,h)) 
