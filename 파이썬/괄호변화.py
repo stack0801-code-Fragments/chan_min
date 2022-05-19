@@ -11,7 +11,7 @@ def cut(p): #p -> u, v로 분리
             return p[:i + 1], p[i + 1:]
 
 
-def check(u): #u의 올바른 괄호인지 검사하며 체크
+def SaC(u): #u의 올바른 괄호인지 검사하며 체크
     stack = []
     for i in u:
         if i == '(':
@@ -30,7 +30,7 @@ def solution(p):
 
     u, v = cut(p) #u, v로 나누기 -> 주의사항 : u가 분리될 여지가 남으면 안됨 잘못하면 v 빈거됨 
 
-    if check(u): #u가 정상이면 v를 자시 검사함
+    if SaC(u): #u가 정상이면 v를 자시 검사함
         print("u가 정상일때 v : ", u + solution(v))
         return u + solution(v) #u에다가 v검사한거 붙임  
     else: #u가 정상이 아니면 시작
