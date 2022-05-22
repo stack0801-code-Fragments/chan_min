@@ -5,9 +5,9 @@ def solution(rows, columns, queries):
         circle.append([x for x in range(i*columns+1, (i+1) * columns + 1)])
         
     for q in queries:
-        q = [i-1 for i in q]# 0부터 1씩 빼주는 값
+        q = [i-1 for i in q] #0부터 1씩 빼주는 값
 
-        arr = circle[q[0]][q[1]] # 좌측 상단값 저장
+        arr = circle[q[0]][q[1]] #좌측 상단값 저장
         print("저장값 : ", arr)
         q_min = arr
         

@@ -26,7 +26,7 @@ def bfs(p, row, col):
             vis[new_row][new_col] == True #방문 마킹
             q.put((new_row, new_col, dist[2]+1)) 
 
-def check(p):
+def check_P(p):
     for i in range(5):
         for j in range(5):
             if p[i][j] == "P":
@@ -37,7 +37,7 @@ def check(p):
 def solution(places):
     answer = []
     for p in places:
-        if check(p):
+        if check_P(p):
             answer.append(1)
         else:
             answer.append(0)

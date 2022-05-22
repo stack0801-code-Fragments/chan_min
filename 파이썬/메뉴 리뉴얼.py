@@ -1,9 +1,9 @@
 import itertools #combinations는 하나의 리스트 내에서 모든 조합을 구하는 라이브러리
 import collections #Counter를 통해 리스트 내의 중복값을 모두 카운트한다
 
-def solution(orders, course): #course만큼 반복 ex)[2,3,4]->2개 조합 3개조합 4개조합같은 형식
+def solution(orders, course):
     answer = []
-    for i in course:
+    for i in course: #course만큼 반복 ex)[2,3,4]->2개 조합 3개조합 4개조합같은 형식
         order_backup = []
         for j in orders: #오더 수만큼 반복
             com = itertools.combinations(sorted(j), i) #정렬하면서 오더 수만큼 코스 조합
