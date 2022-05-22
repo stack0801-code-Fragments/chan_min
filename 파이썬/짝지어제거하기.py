@@ -1,6 +1,5 @@
 def solution(s):
     answer = []
-    
     for i in range(len(s)):
         if not answer: #stack 없음? -> 첫번째 비교를 위한 한개 넣기
             answer.append(s[i])
@@ -16,3 +15,5 @@ def solution(s):
         return 0 #남음
     else: 
         return 1 #안남음
+
+solution("baabaa")
