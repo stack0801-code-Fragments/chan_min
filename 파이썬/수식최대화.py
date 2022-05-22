@@ -7,14 +7,14 @@ def solution(expression):
     print(expression)
 
     answer = []
-    for operater in operators:
-        exp = expression[:]
-        for op in operater: #연산자 우선순위
-            while op in exp:
-                idx = exp.index(op)#연산자 위치
-                exp[idx-1] = str(eval(exp[idx-1] + op + exp[idx+1])) #계산
-                del exp[idx:idx+2]#삭제
-        answer.append(abs(int(exp[0])))
+    for i in operators:
+        ex = expression[:]
+        for j in i: #연산자 우선순위
+            while j in ex:
+                idx = ex.index(j)#연산자 위치
+                ex[idx-1] = str(eval(ex[idx-1] + j + ex[idx+1])) #계산
+                del ex[idx:idx+2]#삭제
+        answer.append(abs(int(ex[0])))
     return max(answer)
 
 print(solution("100-200*300-500+20"))

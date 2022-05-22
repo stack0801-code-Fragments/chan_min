@@ -40,10 +40,10 @@ def solution(p):
         answer += ')' #마지막에 붙임
 
         for p in u[1:len(u) - 1]: #u에서 첫번째랑 마지막 없애고 나머지 괄호 뒤집어서 뒤에
-            if p == '(':
-                answer += ')'
+            if p == "(":
+                answer += ")"
             else:
-                answer += '('
+                answer += "("
         
         return answer
 

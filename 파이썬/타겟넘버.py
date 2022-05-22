@@ -9,11 +9,7 @@ def solution(numbers, target):
         answer = bfs_stack #bfs값을 answer로 옴김
         print("값 : ", bfs_stack)
 
-    for i in range(len(answer)):
-        if(answer[i] == target):#타겟넘버만 카운트함
-            cnt += 1
-    #return answer.count(target) -> count는 리스트내의 같은 수의 개수만을 샘
-    return cnt
+    return answer.count(target) #count는 리스트내의 같은 수의 개수만을 샘
 
 print(solution([1,1,1,1,1], 3))
 print(solution([4,1,2,1], 4))
