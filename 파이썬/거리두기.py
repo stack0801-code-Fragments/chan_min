@@ -14,7 +14,7 @@ def bfs(p, row, col):
             continue
         if dist[2] != 0 and p[dist[0]][dist[1]] == "P": #거리 2이하에서 P 못만나면 밑에 과정 다 스킵
             return False
-        for i in range(4):#4방향 탐색
+        for i in range(4): #4방향 탐색
             new_row = dist[0] + D[i][0]
             new_col = dist[1] + D[i][1]
             if new_row < 0 or new_row > 4 or new_col < 0 or new_col > 4: #스킵용 컨테뉴
