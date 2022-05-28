@@ -1,13 +1,12 @@
 def solution(numbers):
-    
-    numbers = list(map(str,numbers))
-    sort_num = sorted(numbers, key = lambda x : x*3, reverse= True)
+    answer = ""
+    numbers = list(map(str, numbers))
+    sort_num = sorted(numbers, key = lambda x : x*5, reverse= True)
     answer = ''.join(sort_num)
     if int(answer) == 0:
-        answer = '0'
+        answer = "0"
 
     return answer
-
 
 
 def solution(numbers):
