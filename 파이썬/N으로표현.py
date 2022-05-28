@@ -1,3 +1,5 @@
 def solution(N, number):
-    answer = 0
+    answer = []
     return answer
+
+print(solution(5, 12))

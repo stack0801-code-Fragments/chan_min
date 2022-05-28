@@ -25,5 +25,4 @@ def solution(priorities, location):
                 print("출력 후 로케 값 : ", location)
                 answer += 1 #출력번째수 +1
 
-
 solution([2, 1, 3, 2], 2)
